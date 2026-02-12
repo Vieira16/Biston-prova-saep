@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acesso do Participante</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="layout">
+    <div class="panel">
+
+        <div class="panel-top">
+            <h1>Plataforma de Provas</h1>
+            <p>Identifique-se para iniciar</p>
+        </div>
+
+        <form action="questao.html" method="get" class="form-grid">
+
+            <div class="field">
+                <label>Nome</label>
+                <input type="text" name="nome" required placeholder="Seu nome completo">
+            </div>
+
+            <div class="field">
+                <label>Email</label>
+                <input type="email" name="email" required placeholder="email@exemplo.com">
+            </div>
+
+            <div class="field">
+                <label>Matrícula</label>
+                <input type="text" name="matricula" required placeholder="000000">
+            </div>
+
+            <div class="field">
+                <label>Área</label>
+                <select name="curso" required>
+                    <option value="">Selecione</option>
+                    <option>Desenvolvimento</option>
+                    <option>Redes</option>
+                    <option>Informática</option>
+                    <option>Administração</option>
+                </select>
+            </div>
+
+            <button class="btn-main">Entrar na Avaliação</button>
+
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>

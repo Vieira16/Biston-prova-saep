@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1e293b, #020617);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== layout ===== */
+
+.layout {
+    width: 100%;
+    max-width: 820px;
+    padding: 20px;
+}
+
+/* ===== cadastro ===== */
+
+.panel {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 40px;
+    box-shadow: 0 25px 60px rgba(0,0,0,.35);
+}
+
+.panel-top {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.panel-top h1 {
+    color: #0f172a;
+    font-size: 26px;
+    margin-bottom: 6px;
+}
+
+.panel-top p {
+    color: #64748b;
+}
+
+.form-grid {
+    display: grid;
+    gap: 18px;
+}
+
+.field label {
+    font-size: 13px;
+    color: #334155;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.field input,
+.field select {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    background: #f8fafc;
+    font-size: 14px;
+}
+
+.field input:focus,
+.field select:focus {
+    outline: none;
+    border-color: #6366f1;
+    background: #ffffff;
+}
+
+/* ===== questão ===== */
+
+.quiz-card {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 25px 60px rgba(0,0,0,.35);
+    overflow: hidden;
+}
+
+.quiz-bar {
+    background: linear-gradient(90deg, #6366f1, #22d3ee);
+    padding: 16px 24px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.badge {
+    background: rgba(255,255,255,.2);
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+}
+
+.quiz-body {
+    padding: 30px;
+}
+
+.quiz-body h2 {
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+.quiz-body p {
+    color: #334155;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.highlight {
+    font-weight: 600;
+    color: #1e293b;
+    margin-top: 15px;
+}
+
+/* ===== opções ===== */
+
+.choice {
+    display: block;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.choice:hover {
+    background: #f1f5f9;
+}
+
+.choice input {
+    margin-right: 10px;
+}
+
+/* ===== botões ===== */
+
+.btn-main {
+    background: linear-gradient(90deg, #6366f1, #22d3ee);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-main:hover {
+    opacity: .9;
+}
+
+.btn-ghost {
+    background: transparent;
+    border: 2px solid #cbd5e1;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+/* ===== responsivo ===== */
+
+@media (max-width: 600px) {
+    .panel,
+    .quiz-body {
+        padding: 22px;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+}
